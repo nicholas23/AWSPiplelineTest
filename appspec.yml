@@ -2,14 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: ./
-    destination: /home/ec2-user
+    destination: /home/ec2-user/
 hooks:
   ApplicationStart:
     - location: runapp.sh
-      timeout: 300
+      timeout: 400
       runas: root
   ApplicationStop:
     - location: stopapp.sh
-      timeout: 300
+      timeout: 400
       runas: root
 

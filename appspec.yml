@@ -6,3 +6,10 @@ files:
 hooks:
   ApplicationStart:
     - location: runapp.sh
+      timeout: 300
+      runas: root
+  ApplicationStop:
+    - location: stopapp.sh
+      timeout: 300
+      runas: root
+
